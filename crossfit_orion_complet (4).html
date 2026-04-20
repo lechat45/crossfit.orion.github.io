@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="CrossFit Orion — Box CrossFit à Ingré (45140). Cours WOD, Hyrox, Kids CrossFit, Free Access."/>
+<title>CrossFit Orion — Ingré (45)</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','XXXXXXXXXXXXXXXX');fbq('track','PageView');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<style>
+/* ============================
+   RESET & ROOT
+   ============================ */
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --fire:#FF4D00;--ember:#FF8C00;--gold:#FFB800;
+  --bg:#0F0F0F;--bg2:#161616;--bg3:#1e1e1e;
+  --border:#222;--border2:#2a2a2a;
+  --text:#fff;--text2:#888;--text3:#555;
+  --r:14px;--rl:18px;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;line-height:1.6;min-width:320px;}
+a{text-decoration:none;}
+
+/* ============================
+   LAYOUT
+   ============================ */
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,80px);}
+.section{padding:clamp(48px,7vw,100px) 0 0;}
+.section-last{padding:clamp(48px,7vw,100px) 0;}
+.divider{height:1px;background:var(--border);margin:0 clamp(20px,5vw,80px);}
+.sec-label{font-family:'Barlow Condensed',sans-serif;font-size:clamp(10px,0.9vw,12px);color:var(--fire);letter-spacing:5px;text-transform:uppercase;margin-bottom:6px;}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(26px,4vw,52px);color:var(--text);letter-spacing:2px;margin-bottom:clamp(20px,3vw,36px);}
+.section-btn-wrap{display:flex;justify-content:center;padding:clamp(24px,3.5vw,44px) 0 0;}
+
+/* ============================
+   BUTTONS
+   ============================ */
+.btn-fire{background:var(--fire);border:none;border-radius:10px;padding:clamp(12px,1.4vw,16px) clamp(24px,3.5vw,44px);font-family:'Bebas Neue',sans-serif;font-size:clamp(15px,1.7vw,19px);color:#fff;letter-spacing:2px;cursor:pointer;transition:opacity .2s;display:inline-block;}
+.btn-fire:hover{opacity:.85;}
+.btn-outline{background:transparent;border:1.5px solid var(--border2);border-radius:10px;padding:clamp(12px,1.4vw,16px) clamp(24px,3.5vw,44px);font-family:'Bebas Neue',sans-serif;font-size:clamp(15px,1.7vw,19px);color:var(--text2);letter-spacing:2px;cursor:pointer;transition:border-color .2s,color .2s;display:inline-block;}
+.btn-outline:hover{border-color:var(--fire);color:var(--fire);}
+.btn-border{background:transparent;border:2px solid var(--fire);border-radius:10px;padding:clamp(12px,1.4vw,16px) clamp(24px,3.5vw,44px);font-family:'Bebas Neue',sans-serif;font-size:clamp(15px,1.7vw,19px);color:var(--fire);letter-spacing:2px;cursor:pointer;transition:background .2s,color .2s;display:inline-block;}
+.btn-border:hover{background:var(--fire);color:#fff;}
+.btn-ghost{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:clamp(12px,1.4vw,16px) clamp(24px,3.5vw,44px);font-family:'Bebas Neue',sans-serif;font-size:clamp(15px,1.7vw,19px);color:var(--text2);letter-spacing:2px;cursor:pointer;transition:border-color .2s,color .2s;display:inline-block;}
+.btn-ghost:hover{border-color:var(--fire);color:var(--fire);}
+
+/* ============================
+   NAV
+   ============================ */
+.topnav{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.97);border-bottom:1px solid var(--border);backdrop-filter:blur(10px);padding:0 clamp(20px,5vw,80px);height:56px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,2vw,22px);color:var(--fire);letter-spacing:3px;}
+.nav-links{display:flex;gap:clamp(14px,2vw,28px);align-items:center;}
+.nav-link{font-family:'Barlow Condensed',sans-serif;font-size:clamp(11px,1.1vw,13px);color:var(--text2);letter-spacing:2px;text-transform:uppercase;cursor:pointer;background:none;border:none;transition:color .2s;}
+.nav-link:hover{color:var(--fire);}
+.nav-cta{background:var(--fire);border:none;border-radius:7px;padding:7px clamp(12px,1.5vw,20px);font-family:'Bebas Neue',sans-serif;font-size:clamp(12px,1.2vw,14px);color:#fff;letter-spacing:1.5px;cursor:pointer;white-space:nowrap;}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.nav-burger span{display:block;width:22px;height:2px;background:var(--text2);border-radius:2px;transition:all .3s;}
+.mobile-menu{display:none;position:fixed;top:56px;left:0;right:0;background:#0a0a0a;border-bottom:1px solid var(--border);z-index:99;padding:20px;flex-direction:column;gap:12px;}
+.mobile-menu.open{display:flex;}
+.mobile-nav-link{font-family:'Barlow Condensed',sans-serif;font-size:16px;color:var(--text2);letter-spacing:2px;cursor:pointer;text-transform:uppercase;background:none;border:none;text-align:left;padding:8px 0;border-bottom:1px solid var(--border);}
+@media(max-width:680px){.nav-links{display:none;}.nav-burger{display:flex;}}
+
+/* ============================
+   SOCIAL
+   ============================ */
+.social-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.social-btn{width:clamp(40px,4vw,50px);height:clamp(40px,4vw,50px);border-radius:50%;background:var(--bg2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,background .2s;}
+.social-btn:hover{border-color:var(--fire);background:var(--bg3);}
+.social-btn svg{width:clamp(15px,1.5vw,20px);height:clamp(15px,1.5vw,20px);}
+
+/* ============================
+   HERO
+   ============================ */
+.hero{padding:clamp(50px,8vw,100px) 0 clamp(40px,6vw,80px);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;}
+.hero-glow{position:absolute;top:-80px;right:-80px;width:min(500px,60vw);height:min(500px,60vw);border-radius:50%;background:var(--fire);opacity:.05;pointer-events:none;}
+.hero-glow2{position:absolute;bottom:-100px;left:-80px;width:min(400px,50vw);height:min(400px,50vw);border-radius:50%;background:var(--ember);opacity:.04;pointer-events:none;}
+.logo-wrap{width:clamp(160px,28vw,320px);margin-bottom:16px;}
+.hero-sub{font-size:clamp(13px,1.5vw,17px);color:var(--text2);line-height:1.7;max-width:min(560px,90vw);margin-bottom:clamp(20px,3vw,36px);}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+
+/* ============================
+   HORAIRES
+   ============================ */
+.horaires-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;}
+.horaire-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(14px,2vw,22px);}
+.horaire-day{font-family:'Bebas Neue',sans-serif;font-size:clamp(14px,1.5vw,18px);color:var(--fire);letter-spacing:1.5px;margin-bottom:4px;}
+.horaire-time{font-family:'Barlow Condensed',sans-serif;font-size:clamp(12px,1.1vw,14px);color:var(--text2);line-height:1.7;}
+
+/* ============================
+   DISCIPLINES
+   ============================ */
+.offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,45vw),1fr));gap:clamp(10px,1.3vw,16px);}
+.offer-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(16px,2.2vw,26px);}
+.offer-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(17px,1.9vw,24px);color:var(--fire);letter-spacing:1.5px;margin-bottom:7px;}
+.offer-desc{font-size:clamp(12px,1vw,13px);color:var(--text3);line-height:1.6;}
+
+/* ============================
+   STATS
+   ============================ */
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+@media(max-width:480px){
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .stat-card:nth-child(3n){border-right:1px solid var(--border)!important;}
+  .stat-card:nth-child(2n){border-right:none!important;}
+  .stat-card:nth-child(5),.stat-card:nth-child(6){border-bottom:none!important;}
+}
+.stat-card{background:var(--bg2);padding:clamp(16px,2.5vw,30px) clamp(12px,1.8vw,22px);border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;flex-direction:column;justify-content:space-between;}
+.stat-card:nth-child(3n){border-right:none;}
+.stat-card:nth-child(4),.stat-card:nth-child(5),.stat-card:nth-child(6){border-bottom:none;}
+.stat-label{font-family:'Barlow Condensed',sans-serif;font-size:clamp(9px,.85vw,11px);color:var(--fire);letter-spacing:3px;text-transform:uppercase;margin-bottom:6px;}
+.stat-val{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,4.5vw,52px);color:var(--text);letter-spacing:1px;line-height:1;margin-bottom:6px;}
+.stat-sub{font-size:clamp(10px,.85vw,12px);color:var(--text3);line-height:1.4;}
+
+/* ============================
+   TARIFS
+   ============================ */
+.tarifs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,90vw),1fr));gap:clamp(10px,1.5vw,18px);}
+.tarif-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(18px,2.5vw,28px);display:flex;flex-direction:column;}
+.tarif-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,2vw,24px);color:var(--text);letter-spacing:1.5px;margin-bottom:6px;}
+.tarif-price{font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,2.8vw,36px);color:var(--fire);line-height:1.1;margin-bottom:4px;}
+.tarif-sub{font-family:'Barlow Condensed',sans-serif;font-size:clamp(11px,1vw,13px);color:var(--text3);margin-bottom:10px;}
+.tarif-desc{font-size:clamp(11px,1vw,13px);color:var(--text3);line-height:1.6;flex:1;}
+.tarif-badge{display:inline-block;background:rgba(255,77,0,.1);border:1px solid rgba(255,77,0,.25);border-radius:6px;padding:3px 10px;font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--fire);letter-spacing:2px;margin-top:10px;}
+.parrainage-card{background:rgba(255,77,0,.05);border:1px solid rgba(255,77,0,.15);border-radius:var(--r);padding:clamp(16px,2vw,24px);display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px;}
+.parrainage-text{font-size:clamp(12px,1.1vw,14px);color:var(--text3);flex:1;min-width:200px;line-height:1.6;}
+
+/* ============================
+   TEAM
+   ============================ */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,42vw),1fr));gap:clamp(10px,1.3vw,16px);}
+.team-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(16px,2vw,24px);text-align:center;}
+.team-avatar{width:clamp(56px,6vw,76px);height:clamp(56px,6vw,76px);border-radius:50%;background:linear-gradient(135deg,var(--fire),var(--ember));margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,2vw,24px);color:#fff;overflow:hidden;}
+.team-avatar img{width:100%;height:100%;object-fit:cover;}
+.team-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(14px,1.5vw,19px);color:var(--text);letter-spacing:1px;margin-bottom:3px;}
+.team-role{font-family:'Barlow Condensed',sans-serif;font-size:clamp(9px,.85vw,11px);color:var(--fire);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;}
+.team-bio{font-size:clamp(10px,.9vw,12px);color:var(--text3);line-height:1.5;}
+.team-photo-note{font-size:10px;color:#2a2a2a;font-style:italic;margin-top:5px;}
+
+/* ============================
+   AVIS
+   ============================ */
+.avis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,90vw),1fr));gap:clamp(10px,1.5vw,16px);}
+.avis-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(16px,2vw,24px);}
+.avis-stars{color:var(--gold);font-size:clamp(14px,1.5vw,18px);margin-bottom:8px;}
+.avis-text{font-size:clamp(12px,1.1vw,14px);color:var(--text2);line-height:1.6;font-style:italic;margin-bottom:10px;}
+.avis-author{font-family:'Barlow Condensed',sans-serif;font-size:clamp(11px,1vw,13px);color:var(--text3);letter-spacing:1px;}
+.avis-header{display:flex;align-items:center;gap:16px;padding:clamp(14px,2vw,22px);background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);margin-bottom:16px;flex-wrap:wrap;}
+.avis-score-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,56px);color:var(--gold);line-height:1;}
+
+/* ============================
+   GALERIE
+   ============================ */
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,90vw),1fr));gap:clamp(10px,1.5vw,18px);}
+.video-wrap{border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;background:var(--bg2);}
+.video-wrap iframe{width:100%;height:100%;border:0;}
+
+/* ============================
+   ACCÈS / CARTE
+   ============================ */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,90vw),1fr));gap:clamp(12px,1.8vw,22px);}
+.map-wrap{border-radius:var(--r);overflow:hidden;height:clamp(240px,35vw,420px);border:1px solid var(--border);}
+.map-wrap iframe{width:100%;height:100%;border:0;filter:invert(90%) hue-rotate(180deg) brightness(.85);}
+.contact-info-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;}
+.contact-top{padding:clamp(18px,2.5vw,30px);border-bottom:1px solid var(--bg3);}
+.contact-avatar-row{display:flex;align-items:center;gap:14px;margin-bottom:12px;}
+.contact-avatar{width:clamp(48px,4.5vw,62px);height:clamp(48px,4.5vw,62px);border-radius:50%;background:var(--fire);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:clamp(17px,1.8vw,22px);color:#fff;flex-shrink:0;}
+.contact-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(17px,2vw,26px);color:var(--text);letter-spacing:1.5px;line-height:1;}
+.contact-role{font-family:'Barlow Condensed',sans-serif;font-size:clamp(9px,.85vw,11px);color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-top:3px;}
+.contact-intro{font-size:clamp(12px,1.1vw,13px);color:var(--text3);line-height:1.7;}
+.contact-link-row{display:flex;align-items:flex-start;gap:12px;padding:clamp(12px,1.5vw,17px) clamp(18px,2.5vw,30px);border-bottom:1px solid var(--bg3);}
+.contact-link-row:last-child{border-bottom:none;}
+.contact-link-icon{width:clamp(30px,2.8vw,40px);height:clamp(30px,2.8vw,40px);background:var(--bg3);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.contact-link-label{font-family:'Barlow Condensed',sans-serif;font-size:clamp(9px,.85vw,11px);color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;}
+.contact-link-val{font-size:clamp(12px,1.2vw,14px);color:#FF6B35;font-weight:500;line-height:1.5;}
+
+/* ============================
+   FORMULAIRE
+   ============================ */
+.form-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--rl);padding:clamp(22px,3.5vw,46px);}
+.form-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,3.5vw,42px);color:var(--text);letter-spacing:2px;margin-bottom:clamp(18px,2.5vw,30px);}
+.form-group{margin-bottom:clamp(14px,1.8vw,20px);}
+.form-label{font-family:'Barlow Condensed',sans-serif;font-size:clamp(10px,.9vw,12px);color:var(--text2);letter-spacing:2px;text-transform:uppercase;margin-bottom:7px;display:block;}
+.form-label span{color:var(--fire);}
+.form-input,.form-select,.form-textarea{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:clamp(11px,1.1vw,14px) clamp(13px,1.3vw,16px);font-family:'Barlow',sans-serif;font-size:clamp(13px,1.1vw,15px);color:var(--text);outline:none;transition:border-color .2s;}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--fire);}
+.form-input::placeholder,.form-textarea::placeholder{color:var(--text3);}
+.form-select{appearance:none;cursor:pointer;}
+.form-textarea{resize:vertical;min-height:clamp(90px,9vw,130px);}
+.phone-row{display:flex;gap:8px;}
+.flag-btn{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:0 13px;cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0;position:relative;min-height:clamp(42px,3.8vw,50px);}
+.flag-icon{font-size:19px;line-height:1;}
+.flag-arrow{font-size:9px;opacity:.5;}
+.dial-code{font-family:'Barlow Condensed',sans-serif;font-size:clamp(12px,1vw,14px);color:var(--text2);}
+.dropdown{position:absolute;top:calc(100% + 6px);left:0;background:#252525;border:1px solid #333;border-radius:12px;z-index:999;min-width:220px;max-height:270px;overflow-y:auto;box-shadow:0 12px 40px rgba(0,0,0,.7);}
+.dropdown::-webkit-scrollbar{width:4px;}.dropdown::-webkit-scrollbar-thumb{background:#444;border-radius:2px;}
+.dropdown-item{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer;transition:background .15s;}
+.dropdown-item:hover{background:#333;}
+.di-flag{font-size:19px;flex-shrink:0;}
+.di-name{font-size:13px;color:#ccc;flex:1;}
+.di-code{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:#FF4D00;}
+.phone-input-field{flex:1;background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:clamp(11px,1.1vw,14px) clamp(13px,1.3vw,16px);font-family:'Barlow',sans-serif;font-size:clamp(13px,1.1vw,15px);color:var(--text);outline:none;transition:border-color .2s;}
+.phone-input-field:focus{border-color:var(--fire);}
+.phone-input-field::placeholder{color:var(--text3);}
+.btn-submit{width:100%;background:var(--fire);border:none;border-radius:11px;padding:clamp(15px,1.6vw,20px);font-family:'Bebas Neue',sans-serif;font-size:clamp(17px,1.8vw,22px);color:#fff;letter-spacing:2px;cursor:pointer;margin-top:6px;transition:opacity .2s;}
+.btn-submit:hover{opacity:.85;}
+.btn-submit:disabled{opacity:.5;cursor:not-allowed;}
+.form-success{display:none;background:rgba(30,180,100,.1);border:1px solid rgba(30,180,100,.25);border-radius:10px;padding:16px 20px;margin-top:12px;font-size:14px;color:#4dbe7c;line-height:1.6;}
+.form-error{display:none;background:rgba(255,77,0,.08);border:1px solid rgba(255,77,0,.2);border-radius:10px;padding:12px 16px;margin-top:10px;font-size:13px;color:#FF6B35;}
+
+/* ============================
+   WORD ANIMATION
+   ============================ */
+.btn-tester{background:var(--bg2);border:1.5px solid var(--border2);border-radius:12px;padding:clamp(13px,1.5vw,17px) clamp(24px,3.5vw,46px);font-family:'Bebas Neue',sans-serif;font-size:clamp(16px,1.8vw,22px);color:#fff;letter-spacing:2px;cursor:pointer;display:flex;align-items:center;gap:clamp(8px,1vw,14px);transition:border-color .2s;flex-wrap:wrap;justify-content:center;}
+.btn-tester:hover{border-color:var(--fire);}
+.btn-tester.running{border-color:var(--fire);}
+.tester-label{color:var(--text2);}
+.word-slot{position:relative;height:1.2em;overflow:hidden;min-width:clamp(130px,16vw,220px);display:inline-flex;align-items:center;}
+.word-item{position:absolute;width:100%;font-family:'Bebas Neue',sans-serif;font-size:inherit;color:var(--fire);letter-spacing:2px;text-align:left;transform:translateY(100%);opacity:0;transition:transform .4s cubic-bezier(.22,1,.36,1),opacity .4s ease;}
+.word-item.active{transform:translateY(0);opacity:1;}
+.word-item.exit{transform:translateY(-100%);opacity:0;}
+
+/* ============================
+   MENTIONS
+   ============================ */
+.mentions-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(18px,2.5vw,30px);}
+.mentions-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(15px,1.6vw,20px);color:var(--text);letter-spacing:1.5px;margin-bottom:8px;margin-top:18px;border-top:1px solid var(--border);padding-top:16px;}
+.mentions-title:first-child{margin-top:0;border-top:none;padding-top:0;}
+.mentions-text{font-size:clamp(11px,1vw,13px);color:var(--text3);line-height:1.7;}
+
+/* ============================
+   COOKIE
+   ============================ */
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:#0f0f0f;border-top:1px solid #2a2a2a;padding:clamp(12px,2vw,18px) clamp(16px,3vw,32px);display:flex;align-items:center;gap:14px;flex-wrap:wrap;z-index:9999;}
+.cookie-text{font-size:clamp(11px,1vw,13px);color:var(--text3);flex:1;min-width:200px;line-height:1.5;}
+.cookie-btns{display:flex;gap:8px;flex-wrap:wrap;}
+.cookie-accept{background:var(--fire);border:none;border-radius:7px;padding:8px 16px;font-family:'Bebas Neue',sans-serif;font-size:14px;color:#fff;letter-spacing:1px;cursor:pointer;}
+.cookie-refuse{background:transparent;border:1px solid #333;border-radius:7px;padding:8px 16px;font-family:'Bebas Neue',sans-serif;font-size:14px;color:#555;letter-spacing:1px;cursor:pointer;}
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer{background:#0a0a0a;border-top:1px solid var(--border);padding:clamp(22px,3.5vw,44px) clamp(20px,5vw,80px);}
+.footer-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px;}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:clamp(14px,1.8vw,20px);color:#333;letter-spacing:4px;}
+.footer-links{display:flex;gap:clamp(12px,2vw,22px);flex-wrap:wrap;}
+.footer-link{font-size:clamp(11px,.95vw,13px);color:#444;cursor:pointer;transition:color .2s;}
+.footer-link:hover{color:var(--fire);}
+.footer-copy{font-size:clamp(10px,.85vw,12px);color:#252525;border-top:1px solid #1a1a1a;padding-top:14px;}
+
+/* ============================
+   ADMIN PANEL
+   ============================ */
+#adminOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9998;align-items:center;justify-content:center;padding:16px;}
+#adminOverlay.open{display:flex;}
+.admin-box{background:#111;border:1px solid #2a2a2a;border-radius:16px;width:100%;max-width:780px;max-height:90vh;overflow-y:auto;padding:clamp(20px,3vw,36px);}
+.admin-box::-webkit-scrollbar{width:4px;}.admin-box::-webkit-scrollbar-thumb{background:#333;border-radius:2px;}
+.admin-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #222;}
+.admin-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,2.5vw,28px);color:var(--fire);letter-spacing:2px;}
+.admin-close{background:none;border:1px solid #333;border-radius:8px;color:#666;cursor:pointer;padding:6px 12px;font-size:18px;line-height:1;}
+.admin-close:hover{color:#fff;border-color:#555;}
+.admin-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px;}
+.admin-tab{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:7px 14px;font-family:'Barlow Condensed',sans-serif;font-size:clamp(11px,1.1vw,13px);color:#666;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.admin-tab.active{background:var(--fire);border-color:var(--fire);color:#fff;}
+.admin-panel{display:none;}
+.admin-panel.active{display:block;}
+.admin-section-title{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--text2);letter-spacing:2px;margin-bottom:12px;margin-top:20px;padding-top:16px;border-top:1px solid #1e1e1e;}
+.admin-section-title:first-child{margin-top:0;padding-top:0;border-top:none;}
+.admin-field{margin-bottom:14px;}
+.admin-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:#666;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;display:block;}
+.admin-input,.admin-textarea{width:100%;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:9px 12px;font-family:'Barlow',sans-serif;font-size:13px;color:#ccc;outline:none;transition:border-color .2s;}
+.admin-input:focus,.admin-textarea:focus{border-color:var(--fire);}
+.admin-textarea{resize:vertical;min-height:80px;}
+.admin-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+@media(max-width:500px){.admin-row{grid-template-columns:1fr;}}
+.admin-save{background:var(--fire);border:none;border-radius:8px;padding:10px 24px;font-family:'Bebas Neue',sans-serif;font-size:15px;color:#fff;letter-spacing:1.5px;cursor:pointer;margin-top:16px;transition:opacity .2s;}
+.admin-save:hover{opacity:.85;}
+.admin-saved{display:none;font-family:'Barlow',sans-serif;font-size:12px;color:#4dbe7c;margin-top:8px;}
+.admin-entry{background:#1a1a1a;border:1px solid #222;border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:flex-start;gap:10px;}
+.admin-entry-content{flex:1;display:flex;flex-direction:column;gap:6px;}
+.admin-entry-input{width:100%;background:#252525;border:1px solid #2a2a2a;border-radius:6px;padding:7px 10px;font-family:'Barlow',sans-serif;font-size:12px;color:#ccc;outline:none;}
+.admin-entry-input:focus{border-color:var(--fire);}
+.admin-del{background:#2a1a1a;border:1px solid #3a2020;border-radius:6px;color:#cc4444;cursor:pointer;padding:5px 9px;font-size:12px;flex-shrink:0;font-family:'Barlow Condensed',sans-serif;letter-spacing:1px;}
+.admin-del:hover{background:#3a2020;}
+.admin-add{background:transparent;border:1px dashed #333;border-radius:8px;width:100%;padding:9px;font-family:'Barlow Condensed',sans-serif;font-size:12px;color:#555;letter-spacing:1.5px;cursor:pointer;margin-top:6px;transition:all .2s;}
+.admin-add:hover{border-color:var(--fire);color:var(--fire);}
+
+/* Login overlay */
+#loginOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;}
+#loginOverlay.open{display:flex;}
+.login-box{background:#111;border:1px solid #2a2a2a;border-radius:16px;padding:36px;width:100%;max-width:360px;text-align:center;}
+.login-title{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--fire);letter-spacing:3px;margin-bottom:6px;}
+.login-sub{font-size:12px;color:#555;margin-bottom:24px;}
+.login-input{width:100%;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:11px 14px;font-size:14px;color:#ccc;outline:none;margin-bottom:10px;transition:border-color .2s;}
+.login-input:focus{border-color:var(--fire);}
+.login-btn{width:100%;background:var(--fire);border:none;border-radius:8px;padding:12px;font-family:'Bebas Neue',sans-serif;font-size:17px;color:#fff;letter-spacing:2px;cursor:pointer;transition:opacity .2s;}
+.login-btn:hover{opacity:.85;}
+.login-err{font-size:12px;color:#FF6B35;margin-top:8px;display:none;}
+.admin-trigger{position:fixed;bottom:16px;right:16px;background:#111;border:1px solid #2a2a2a;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:997;transition:border-color .2s;}
+.admin-trigger:hover{border-color:var(--fire);}
+.admin-trigger svg{width:18px;height:18px;}
+</style>
+</head>
+<body>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">Nous utilisons des cookies analytiques (Google Analytics 4) et publicitaires (Meta Pixel). Voir notre <span onclick="scrollTo('mentions')" style="color:var(--fire);cursor:pointer;">politique de confidentialité</span>.</div>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">ACCEPTER</button>
+    <button class="cookie-refuse" onclick="refuseCookies()">REFUSER</button>
+  </div>
+</div>
+
+<!-- ADMIN TRIGGER -->
+<button class="admin-trigger" onclick="openLogin()" title="Administration">
+  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#555" stroke-width="1.5"/><path d="M4 20C4 16.686 7.582 14 12 14" stroke="#555" stroke-width="1.5" stroke-linecap="round"/><path d="M16 17L18 19L22 15" stroke="#FF4D00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- LOGIN OVERLAY -->
+<div id="loginOverlay">
+  <div class="login-box">
+    <div class="login-title">ADMIN</div>
+    <div class="login-sub">Panneau d'administration CrossFit Orion</div>
+    <input class="login-input" type="text" id="loginUser" placeholder="Identifiant" autocomplete="username"/>
+    <input class="login-input" type="password" id="loginPass" placeholder="Mot de passe" autocomplete="current-password" onkeydown="if(event.key==='Enter')checkLogin()"/>
+    <button class="login-btn" onclick="checkLogin()">CONNEXION</button>
+    <div class="login-err" id="loginErr">Identifiant ou mot de passe incorrect</div>
+    <div style="margin-top:14px;"><button onclick="closeLogin()" style="background:none;border:none;color:#444;cursor:pointer;font-size:12px;">Annuler</button></div>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminOverlay">
+  <div class="admin-box">
+    <div class="admin-header">
+      <div class="admin-title">PANNEAU D'ADMINISTRATION</div>
+      <button class="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="showTab('tab-contact')">Coordonnées</button>
+      <button class="admin-tab" onclick="showTab('tab-horaires')">Horaires</button>
+      <button class="admin-tab" onclick="showTab('tab-tarifs')">Tarifs</button>
+      <button class="admin-tab" onclick="showTab('tab-medias')">Photos / Vidéos</button>
+      <button class="admin-tab" onclick="showTab('tab-avis')">Avis membres</button>
+      <button class="admin-tab" onclick="showTab('tab-mentions')">Mentions légales</button>
+    </div>
+
+    <!-- TAB COORDONNÉES -->
+    <div id="tab-contact" class="admin-panel active">
+      <div class="admin-section-title">Coordonnées de contact</div>
+      <div class="admin-row">
+        <div class="admin-field"><label class="admin-label">Téléphone</label><input class="admin-input" id="a-phone" value="06 68 99 36 39"/></div>
+        <div class="admin-field"><label class="admin-label">Email</label><input class="admin-input" id="a-email" value="site@crossfitorion.fr"/></div>
+      </div>
+      <div class="admin-field"><label class="admin-label">Adresse complète</label><input class="admin-input" id="a-address" value="4 rue Jean Nicot, 45140 Ingré, France"/></div>
+      <div class="admin-field"><label class="admin-label">Nom du responsable</label><input class="admin-input" id="a-name" value="Alexis Pellerin"/></div>
+      <div class="admin-field"><label class="admin-label">Rôle du responsable</label><input class="admin-input" id="a-role" value="Fondateur & Coach Principal"/></div>
+      <div class="admin-field"><label class="admin-label">Description contact</label><textarea class="admin-textarea" id="a-intro">Pour toute question sur les abonnements, les séances découverte ou les horaires, contactez-nous directement.</textarea></div>
+      <button class="admin-save" onclick="saveContact()">ENREGISTRER</button>
+      <div class="admin-saved" id="saved-contact">✓ Coordonnées mises à jour</div>
+    </div>
+
+    <!-- TAB HORAIRES -->
+    <div id="tab-horaires" class="admin-panel">
+      <div class="admin-section-title">Horaires d'ouverture</div>
+      <div id="horaires-list"></div>
+      <button class="admin-add" onclick="addHoraire()">+ Ajouter un créneau</button>
+      <button class="admin-save" onclick="saveHoraires()" style="margin-top:16px;">ENREGISTRER</button>
+      <div class="admin-saved" id="saved-horaires">✓ Horaires mis à jour</div>
+    </div>
+
+    <!-- TAB TARIFS -->
+    <div id="tab-tarifs" class="admin-panel">
+      <div class="admin-section-title">Formules d'abonnement</div>
+      <div id="tarifs-list"></div>
+      <button class="admin-add" onclick="addTarif()">+ Ajouter une formule</button>
+      <div class="admin-section-title">Informations parrainage</div>
+      <div class="admin-field"><textarea class="admin-textarea" id="a-parrainage">Amenez un ami et bénéficiez d'avantages exclusifs pour vous deux. Contactez-nous pour en savoir plus.</textarea></div>
+      <button class="admin-save" onclick="saveTarifs()">ENREGISTRER</button>
+      <div class="admin-saved" id="saved-tarifs">✓ Tarifs mis à jour</div>
+    </div>
+
+    <!-- TAB MEDIAS -->
+    <div id="tab-medias" class="admin-panel">
+      <div class="admin-section-title">Vidéos YouTube</div>
+      <div class="admin-field"><label class="admin-label">URL vidéo YouTube principale (embed)</label><input class="admin-input" id="a-video1" value="https://www.youtube.com/embed?listType=user_uploads&list=UCfvwp7BUPdB71aGgwoxszzg"/></div>
+      <div class="admin-field"><label class="admin-label">URL vidéo YouTube 2 (optionnel)</label><input class="admin-input" id="a-video2" value=""/></div>
+      <div class="admin-section-title">Photos de l'équipe</div>
+      <div id="team-photos-list"></div>
+      <div class="admin-section-title">Lien Instagram</div>
+      <div class="admin-field"><label class="admin-label">URL profil Instagram</label><input class="admin-input" id="a-instagram" value="https://www.instagram.com/crossfitorion/"/></div>
+      <div class="admin-section-title">Liens réseaux sociaux</div>
+      <div class="admin-row">
+        <div class="admin-field"><label class="admin-label">Facebook</label><input class="admin-input" id="a-facebook" value="https://www.facebook.com/crossfitorion"/></div>
+        <div class="admin-field"><label class="admin-label">TikTok</label><input class="admin-input" id="a-tiktok" value="https://www.tiktok.com/@crossfit_orion"/></div>
+      </div>
+      <div class="admin-field"><label class="admin-label">YouTube</label><input class="admin-input" id="a-youtube" value="https://www.youtube.com/channel/UCfvwp7BUPdB71aGgwoxszzg"/></div>
+      <button class="admin-save" onclick="saveMedias()">ENREGISTRER</button>
+      <div class="admin-saved" id="saved-medias">✓ Médias mis à jour</div>
+    </div>
+
+    <!-- TAB AVIS -->
+    <div id="tab-avis" class="admin-panel">
+      <div class="admin-section-title">Avis membres (5 étoiles uniquement)</div>
+      <div id="avis-list"></div>
+      <button class="admin-add" onclick="addAvis()">+ Ajouter un avis</button>
+      <button class="admin-save" onclick="saveAvis()">ENREGISTRER</button>
+      <div class="admin-saved" id="saved-avis">✓ Avis mis à jour</div>
+    </div>
+
+    <!-- TAB MENTIONS -->
+    <div id="tab-mentions" class="admin-panel">
+      <div class="admin-section-title">Mentions légales</div>
+      <div class="admin-field"><label class="admin-label">Nom de la société</label><input class="admin-input" id="a-societe" value="CrossFit Orion — SASU"/></div>
+      <div class="admin-field"><label class="admin-label">SIRET</label><input class="admin-input" id="a-siret" value="821 519 980 00022"/></div>
+      <div class="admin-field"><label class="admin-label">Directeur de publication</label><input class="admin-input" id="a-directeur" value="Alexis Pellerin"/></div>
+      <div class="admin-field"><label class="admin-label">Hébergeur</label><input class="admin-input" id="a-hebergeur" value="OVH SAS — 2 rue Kellermann, 59100 Roubaix, France"/></div>
+      <div class="admin-field"><label class="admin-label">Texte politique de confidentialité</label><textarea class="admin-textarea" id="a-rgpd" style="min-height:120px;">Les données collectées via le formulaire de contact (nom, email, téléphone, message) sont utilisées uniquement pour répondre à vos demandes. Elles ne sont pas transmises à des tiers sans votre consentement. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, contactez : site@crossfitorion.fr</textarea></div>
+      <button class="admin-save" onclick="saveMentions()">ENREGISTRER</button>
+      <div class="admin-saved" id="saved-mentions">✓ Mentions légales mises à jour</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="topnav" id="topnav">
+  <div class="nav-logo">CROSSFIT ORION</div>
+  <div class="nav-links">
+    <button class="nav-link" onclick="scrollTo('cours')">Cours</button>
+    <button class="nav-link" onclick="scrollTo('disciplines')">Disciplines</button>
+    <button class="nav-link" onclick="scrollTo('tarifs')">Tarifs</button>
+    <button class="nav-link" onclick="scrollTo('equipe')">Équipe</button>
+    <button class="nav-link" onclick="scrollTo('acces')">Accès</button>
+    <button class="nav-cta" onclick="scrollTo('formulaire')">NOUS CONTACTER</button>
+  </div>
+  <button class="nav-burger" id="burger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-nav-link" onclick="scrollTo('cours');toggleMenu()">Cours du jour</button>
+  <button class="mobile-nav-link" onclick="scrollTo('disciplines');toggleMenu()">Disciplines</button>
+  <button class="mobile-nav-link" onclick="scrollTo('tarifs');toggleMenu()">Tarifs</button>
+  <button class="mobile-nav-link" onclick="scrollTo('equipe');toggleMenu()">Équipe</button>
+  <button class="mobile-nav-link" onclick="scrollTo('galerie');toggleMenu()">Galerie</button>
+  <button class="mobile-nav-link" onclick="scrollTo('avis');toggleMenu()">Avis</button>
+  <button class="mobile-nav-link" onclick="scrollTo('acces');toggleMenu()">Accès</button>
+  <button class="mobile-nav-link" onclick="scrollTo('formulaire');toggleMenu()">Contact</button>
+</div>
+
+<div style="background:var(--bg);">
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+  <div class="hero-glow"></div><div class="hero-glow2"></div>
+  <div class="container" style="display:flex;flex-direction:column;align-items:center;">
+    <div class="logo-wrap">
+      <svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(150,145)">
+          <ellipse cx="0" cy="10" rx="72" ry="88" fill="none" stroke="#FF4D00" stroke-width="1.5" opacity="0.15"/>
+          <line x1="-30" y1="-100" x2="30" y2="80" stroke="#FF4D00" stroke-width="2.5" opacity="0.9" stroke-linecap="round"/>
+          <line x1="5" y1="-95" x2="-5" y2="85" stroke="#FF4D00" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+          <ellipse cx="-8" cy="-60" rx="10" ry="14" fill="#FF4D00" opacity="0.9"/>
+          <ellipse cx="-8" cy="-60" rx="7" ry="10" fill="#FF6B35" opacity="0.7"/>
+          <rect x="-20" y="-50" width="28" height="48" rx="4" fill="#FF4D00" opacity="0.15"/>
+          <line x1="-72" y1="-10" x2="72" y2="-10" stroke="#FF4D00" stroke-width="1" opacity="0.2"/>
+          <rect x="-30" y="20" width="20" height="60" rx="3" fill="#FF4D00" opacity="0.12"/>
+          <rect x="-10" y="15" width="35" height="65" rx="3" fill="#FF4D00" opacity="0.08"/>
+          <path d="M-15 80 Q-5 95 5 80" fill="none" stroke="#FF4D00" stroke-width="2" opacity="0.6"/>
+          <circle cx="5" cy="-105" r="3" fill="#FF4D00" opacity="0.8"/>
+          <path d="M-8 -118 L5 -105 L18 -118" fill="none" stroke="#FF4D00" stroke-width="2" opacity="0.7" stroke-linecap="round"/>
+          <line x1="5" y1="-105" x2="5" y2="-130" stroke="#FF4D00" stroke-width="2.5" opacity="0.9" stroke-linecap="round"/>
+          <line x1="5" y1="-130" x2="40" y2="-95" stroke="#FF4D00" stroke-width="2.5" opacity="0.9" stroke-linecap="round"/>
+          <line x1="5" y1="-130" x2="-15" y2="-108" stroke="#FF4D00" stroke-width="1.5" opacity="0.6" stroke-linecap="round"/>
+          <path d="M15 -20 Q50 -30 65 0 Q55 20 20 15 Z" fill="#FF4D00" opacity="0.15"/>
+          <path d="M15 -20 Q50 -30 65 0" fill="none" stroke="#FF4D00" stroke-width="1.5" opacity="0.5"/>
+        </g>
+        <text x="150" y="268" font-family="'Bebas Neue',serif" font-size="42" fill="white" text-anchor="middle" letter-spacing="6">CrossFit</text>
+        <text x="150" y="308" font-family="'Bebas Neue',serif" font-size="42" fill="#FF4D00" text-anchor="middle" letter-spacing="8">ORION</text>
+        <line x1="60" y1="285" x2="90" y2="285" stroke="#FF4D00" stroke-width="1.5" opacity="0.6"/>
+        <circle cx="110" cy="285" r="2.5" fill="#FF4D00" opacity="0.8"/>
+        <circle cx="150" cy="285" r="2.5" fill="#FF4D00" opacity="0.8"/>
+        <circle cx="190" cy="285" r="2.5" fill="#FF4D00" opacity="0.8"/>
+        <line x1="210" y1="285" x2="240" y2="285" stroke="#FF4D00" stroke-width="1.5" opacity="0.6"/>
+      </svg>
+    </div>
+    <p class="hero-sub">Rejoins la box CrossFit la plus engagée de ta région. Entraînements d'élite, coachs certifiés, résultats concrets — à Ingré (45140).</p>
+    <div class="hero-btns">
+      <button class="btn-fire" onclick="scrollTo('formulaire')">NOUS CONTACTER</button>
+      <button class="btn-outline" onclick="scrollTo('disciplines')">NOS DISCIPLINES</button>
+    </div>
+    <div class="social-row" style="margin-top:clamp(18px,2.5vw,30px);">
+      <a class="social-btn" id="link-instagram" href="https://www.instagram.com/crossfitorion/" target="_blank" rel="noopener" title="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF4D00" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="#FF4D00" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="#FF4D00"/></svg></a>
+      <a class="social-btn" id="link-tiktok" href="https://www.tiktok.com/@crossfit_orion" target="_blank" rel="noopener" title="TikTok"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="social-btn" id="link-facebook" href="https://www.facebook.com/crossfitorion" target="_blank" rel="noopener" title="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2H15C13.3 2 12 3.3 12 5V8H9V12H12V22H16V12H19L20 8H16V5C16 4.4 16.4 4 17 4H20V2H18Z" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="social-btn" id="link-youtube" href="https://www.youtube.com/channel/UCfvwp7BUPdB71aGgwoxszzg" target="_blank" rel="noopener" title="YouTube"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="#FF4D00" stroke-width="1.8"/><path d="M10 9L15 12L10 15V9Z" fill="#FF4D00"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== COURS ===== -->
+<section id="cours" class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="sec-label">Programme</div>
+    <div class="sec-title">COURS DU JOUR</div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(24px,4vw,44px);text-align:center;">
+      <div style="width:48px;height:48px;background:var(--bg3);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#FF4D00" stroke-width="1.5"/><path d="M8 3V7M16 3V7M3 11H21" stroke="#FF4D00" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="16" r="2" fill="#FF4D00"/></svg></div>
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(14px,1.4vw,18px);color:var(--text2);letter-spacing:1px;margin-bottom:6px;">Planning & réservation en temps réel</p>
+      <p style="font-size:clamp(12px,1vw,14px);color:var(--text3);margin-bottom:18px;">Consultez tous les cours disponibles et réservez votre place en ligne via ResaWod</p>
+      <a href="https://crossfitorion.resawod.com" target="_blank" rel="noopener" class="btn-fire">VOIR LE PLANNING →</a>
+    </div>
+  </div>
+</section>
+<div class="section-btn-wrap" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container" style="display:flex;justify-content:center;">
+    <a href="https://crossfitorion.resawod.com" target="_blank" rel="noopener" class="btn-border">RÉSERVE TA SÉANCE →</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ===== HORAIRES ===== -->
+<section id="horaires" class="section" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container">
+    <div class="sec-label">Ouverture</div>
+    <div class="sec-title">NOS HORAIRES</div>
+    <div class="horaires-grid" id="horaires-display"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== DISCIPLINES ===== -->
+<section id="disciplines" class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="sec-label">Nos disciplines</div>
+    <div class="sec-title">CE QU'ON OFFRE</div>
+    <div class="offer-grid">
+      <div class="offer-card"><div class="offer-name">WOD CrossFit</div><div class="offer-desc">Entraînements variés, chronométrés, haute intensité. Chaque séance est différente et adaptée à tous les niveaux.</div></div>
+      <div class="offer-card"><div class="offer-name">Hyrox</div><div class="offer-desc">Un entraînement complet qui combine course et exercices pour te rendre plus endurant, plus fort et plus résistant.</div></div>
+      <div class="offer-card"><div class="offer-name">Free Access</div><div class="offer-desc">Accès libre aux équipements 40H par semaine. Entraîne-toi à ton rythme, quand tu veux.</div></div>
+      <div class="offer-card"><div class="offer-name">CrossFit Kids</div><div class="offer-desc">Des séances adaptées aux enfants pour développer leur motricité, coordination et le goût du sport.</div></div>
+      <div class="offer-card"><div class="offer-name">Compétition</div><div class="offer-desc">Préparation aux compétitions régionales et nationales. Rejoins notre équipe de compétiteurs.</div></div>
+    </div>
+  </div>
+</section>
+<div class="section-btn-wrap" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container" style="display:flex;justify-content:center;">
+    <button class="btn-tester" id="testerBtn" onclick="startTester()">
+      <span class="tester-label" id="testerLabel">CLIQUE POUR DÉCOUVRIR</span>
+      <div class="word-slot" id="wordSlot" style="display:none;">
+        <span class="word-item" id="w0"></span>
+        <span class="word-item" id="w1"></span>
+        <span class="word-item" id="w2"></span>
+        <span class="word-item" id="w3"></span>
+        <span class="word-item" id="w4"></span>
+      </div>
+    </button>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ===== STATS ===== -->
+<section id="stats" class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="sec-label">La box en chiffres</div>
+    <div class="sec-title">ORION EN BREF</div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-label">Membres actifs</div><div class="stat-val">+400</div><div class="stat-sub">Une communauté soudée</div></div>
+      <div class="stat-card"><div class="stat-label">Enfants</div><div class="stat-val">+80</div><div class="stat-sub">CrossFit Kids</div></div>
+      <div class="stat-card"><div class="stat-label">Free Access</div><div class="stat-val">40H</div><div class="stat-sub">Accès libre / semaine</div></div>
+      <div class="stat-card"><div class="stat-label">Coachs</div><div class="stat-val">5</div><div class="stat-sub">Passionnés & expérimentés</div></div>
+      <div class="stat-card"><div class="stat-label">Séances / semaine</div><div class="stat-val">40H</div><div class="stat-sub">Du lundi au dimanche</div></div>
+      <div class="stat-card"><div class="stat-label">Ancienneté</div><div class="stat-val">10</div><div class="stat-sub">Ans d'expérience</div></div>
+    </div>
+  </div>
+</section>
+<div class="section-btn-wrap" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container" style="display:flex;justify-content:center;">
+    <button class="btn-ghost" onclick="scrollTo('formulaire')">PLUS D'INFORMATIONS</button>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ===== TARIFS ===== -->
+<section id="tarifs" class="section" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container">
+    <div class="sec-label">Abonnements</div>
+    <div class="sec-title">NOS TARIFS</div>
+    <div class="tarifs-grid" id="tarifs-display"></div>
+    <div class="parrainage-card" id="parrainage-display"></div>
+    <p style="font-size:clamp(11px,1vw,13px);color:var(--text3);text-align:center;margin-top:12px;">Séance découverte disponible — Contactez-nous pour plus d'informations</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== ÉQUIPE ===== -->
+<section id="equipe" class="section" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container">
+    <div class="sec-label">L'équipe</div>
+    <div class="sec-title">VOS COACHS</div>
+    <div class="team-grid" id="team-display"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== GALERIE ===== -->
+<section id="galerie" class="section" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container">
+    <div class="sec-label">En images</div>
+    <div class="sec-title">GALERIE VIDÉOS</div>
+    <div class="video-grid" id="video-display"></div>
+    <!-- Instagram réel via embed officiel -->
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:clamp(20px,3vw,36px);margin-top:16px;text-align:center;">
+      <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:14px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF4D00" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="#FF4D00" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="#FF4D00"/></svg>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--text2);letter-spacing:2px;">@crossfitorion</span>
+      </div>
+      <!-- Elfsight Instagram widget — remplacer par votre vrai widget ID -->
+      <div id="instagram-feed" style="min-height:200px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;">
+        <p style="font-size:12px;color:#333;">Pour afficher vos vraies publications Instagram :</p>
+        <p style="font-size:11px;color:#2a2a2a;max-width:340px;line-height:1.6;">Créez un widget gratuit sur <strong style="color:#555;">elfsight.com</strong> ou <strong style="color:#555;">lightwidget.com</strong>, puis collez le code dans l'admin</p>
+        <a id="link-instagram-btn" href="https://www.instagram.com/crossfitorion/" target="_blank" rel="noopener" class="btn-border" style="padding:9px 22px;font-size:14px;display:inline-block;">VOIR SUR INSTAGRAM →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== AVIS ===== -->
+<section id="avis" class="section" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container">
+    <div class="sec-label">Ce qu'ils en pensent</div>
+    <div class="sec-title">AVIS MEMBRES</div>
+    <div class="avis-header">
+      <div class="avis-score" style="text-align:center;">
+        <div class="avis-score-num">5.0</div>
+        <div style="color:var(--gold);font-size:18px;">★★★★★</div>
+        <div style="font-size:11px;color:var(--text3);">Note Google</div>
+      </div>
+      <div style="flex:1;min-width:160px;">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,2vw,26px);color:var(--text);letter-spacing:1px;margin-bottom:4px;">CrossFit Orion — Ingré</div>
+        <div style="font-size:clamp(12px,1.1vw,14px);color:var(--text3);line-height:1.5;">Rejoignez notre communauté de +400 membres.<br>Vos avis nous aident à accueillir de nouveaux athlètes.</div>
+      </div>
+    </div>
+    <div class="avis-grid" id="avis-display"></div>
+    <p style="font-size:11px;color:var(--text3);text-align:center;margin-top:12px;">Avis issus de Google My Business · Uniquement les avis 5 étoiles sont affichés</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== ACCÈS ===== -->
+<section id="acces" class="section" style="padding-bottom:clamp(40px,6vw,90px);">
+  <div class="container">
+    <div class="sec-label">Où nous trouver</div>
+    <div class="sec-title">PLAN D'ACCÈS</div>
+    <div class="contact-grid">
+      <div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643!2d1.8304!3d47.9144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3eba3f3b43f33%3A0xb59da7f9f9de0a9f!2s4%20Rue%20Jean%20Nicot%2C%2045140%20Ingr%C3%A9!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CrossFit Orion carte"></iframe>
+        </div>
+        <div style="margin-top:10px;">
+          <a href="https://maps.google.com/?q=4+rue+Jean+Nicot+45140+Ingré" target="_blank" rel="noopener" class="btn-border" style="width:100%;text-align:center;padding:10px 16px;font-size:14px;display:block;">ITINÉRAIRE →</a>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="contact-top">
+          <div class="contact-avatar-row">
+            <div class="contact-avatar" id="display-avatar">AP</div>
+            <div>
+              <div class="contact-name" id="display-name">ALEXIS PELLERIN</div>
+              <div class="contact-role" id="display-role">Fondateur & Coach Principal</div>
+            </div>
+          </div>
+          <div class="contact-intro" id="display-intro">Pour toute question sur les abonnements, les séances découverte ou les horaires, contactez-nous directement.</div>
+        </div>
+        <div class="contact-link-row">
+          <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#FF4D00" stroke-width="1.2"/><path d="M1 5L8 9.5L15 5" stroke="#FF4D00" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+          <div><div class="contact-link-label">Email</div><div class="contact-link-val" id="display-email">site@crossfitorion.fr</div></div>
+        </div>
+        <div class="contact-link-row">
+          <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2H6L7.5 5.5L6 6.5C6.8 8.2 7.8 9.2 9.5 10L10.5 8.5L14 10V13C14 13.6 13.6 14 13 14C7 14 2 9 2 3C2 2.4 2.4 2 3 2Z" stroke="#FF4D00" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><div class="contact-link-label">Téléphone</div><div class="contact-link-val" id="display-phone">06 68 99 36 39</div></div>
+        </div>
+        <div class="contact-link-row">
+          <div class="contact-link-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6C3 9.5 8 15 8 15S13 9.5 13 6C13 3.2 10.8 1 8 1ZM8 8C6.9 8 6 7.1 6 6S6.9 4 8 4 10 4.9 10 6 9.1 8 8 8Z" fill="#FF4D00"/></svg></div>
+          <div><div class="contact-link-label">Adresse</div><div class="contact-link-val" id="display-address">4 rue Jean Nicot<br>45140 Ingré, France</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== FORMULAIRE ===== -->
+<section id="formulaire" class="section-last">
+  <div class="container">
+    <div class="sec-label">Écrire à la box</div>
+    <div class="form-card">
+      <div class="form-title">NOUS CONTACTER</div>
+      <form id="contactForm" onsubmit="sendEmail(event)" novalidate>
+        <div class="form-group"><label class="form-label" for="fname">Nom & Prénom <span>*</span></label><input class="form-input" type="text" id="fname" name="from_name" placeholder="Votre nom et prénom" required autocomplete="name"/></div>
+        <div class="form-group"><label class="form-label" for="femail">Email <span>*</span></label><input class="form-input" type="email" id="femail" name="from_email" placeholder="votre@email.fr" required autocomplete="email"/></div>
+        <div class="form-group">
+          <label class="form-label" for="fphone">Téléphone <span>*</span></label>
+          <div class="phone-row">
+            <div class="flag-btn" id="flagBtn" onclick="toggleDropdown(event)">
+              <span class="flag-icon" id="selFlag">🇫🇷</span><span class="dial-code" id="selCode">+33</span><span class="flag-arrow">▼</span>
+              <div class="dropdown" id="countryDropdown" style="display:none;">
+                <div class="dropdown-item" onclick="selectCountry(event,'🇫🇷','+33','06 12 34 56 78')"><span class="di-flag">🇫🇷</span><span class="di-name">France</span><span class="di-code">+33</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇧🇪','+32','04 12 34 56 78')"><span class="di-flag">🇧🇪</span><span class="di-name">Belgique</span><span class="di-code">+32</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇨🇭','+41','076 123 45 67')"><span class="di-flag">🇨🇭</span><span class="di-name">Suisse</span><span class="di-code">+41</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇱🇺','+352','621 123 456')"><span class="di-flag">🇱🇺</span><span class="di-name">Luxembourg</span><span class="di-code">+352</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇺🇸','+1','(555) 012-3456')"><span class="di-flag">🇺🇸</span><span class="di-name">États-Unis</span><span class="di-code">+1</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇬🇧','+44','07700 900123')"><span class="di-flag">🇬🇧</span><span class="di-name">Royaume-Uni</span><span class="di-code">+44</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇲🇦','+212','06 12 34 56 78')"><span class="di-flag">🇲🇦</span><span class="di-name">Maroc</span><span class="di-code">+212</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇩🇿','+213','0551 23 45 67')"><span class="di-flag">🇩🇿</span><span class="di-name">Algérie</span><span class="di-code">+213</span></div>
+                <div class="dropdown-item" onclick="selectCountry(event,'🇹🇳','+216','20 123 456')"><span class="di-flag">🇹🇳</span><span class="di-name">Tunisie</span><span class="di-code">+216</span></div>
+              </div>
+            </div>
+            <input class="phone-input-field" type="tel" id="fphone" name="phone" placeholder="06 12 34 56 78" autocomplete="tel"/>
+          </div>
+        </div>
+        <div class="form-group"><label class="form-label" for="fmessage">Message <span>*</span></label><textarea class="form-textarea" id="fmessage" name="message" placeholder="Votre message, question ou demande..." required></textarea></div>
+        <p style="font-size:11px;color:var(--text3);margin-bottom:12px;line-height:1.6;">En soumettant ce formulaire, vous acceptez notre <span onclick="scrollTo('mentions')" style="color:var(--fire);cursor:pointer;">politique de confidentialité</span>.</p>
+        <button class="btn-submit" type="submit" id="submitBtn">ENVOYER MON MESSAGE</button>
+        <div class="form-success" id="formSuccess">✓ Message envoyé ! Nous vous répondrons dans les meilleurs délais.</div>
+        <div class="form-error" id="formError">Une erreur s'est produite. Veuillez réessayer ou nous appeler directement.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== MENTIONS ===== -->
+<section id="mentions" class="section-last">
+  <div class="container">
+    <div class="sec-label">Légal</div>
+    <div class="sec-title">MENTIONS LÉGALES</div>
+    <div class="mentions-card" id="mentions-display"></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">CROSSFIT ORION</div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="scrollTo('horaires')">Horaires</span>
+      <span class="footer-link" onclick="scrollTo('tarifs')">Tarifs</span>
+      <span class="footer-link" onclick="scrollTo('equipe')">Équipe</span>
+      <span class="footer-link" onclick="scrollTo('acces')">Accès</span>
+      <span class="footer-link" onclick="scrollTo('mentions')">Mentions légales</span>
+    </div>
+    <div class="social-row" style="margin-top:0;">
+      <a class="social-btn" id="footer-instagram" href="https://www.instagram.com/crossfitorion/" target="_blank" rel="noopener" style="width:34px;height:34px;"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#FF4D00" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="#FF4D00" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="#FF4D00"/></svg></a>
+      <a class="social-btn" id="footer-tiktok" href="https://www.tiktok.com/@crossfit_orion" target="_blank" rel="noopener" style="width:34px;height:34px;"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="social-btn" id="footer-facebook" href="https://www.facebook.com/crossfitorion" target="_blank" rel="noopener" style="width:34px;height:34px;"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2H15C13.3 2 12 3.3 12 5V8H9V12H12V22H16V12H19L20 8H16V5C16 4.4 16.4 4 17 4H20V2H18Z" stroke="#FF4D00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="social-btn" id="footer-youtube" href="https://www.youtube.com/channel/UCfvwp7BUPdB71aGgwoxszzg" target="_blank" rel="noopener" style="width:34px;height:34px;"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="#FF4D00" stroke-width="1.8"/><path d="M10 9L15 12L10 15V9Z" fill="#FF4D00"/></svg></a>
+    </div>
+  </div>
+  <div class="footer-copy" id="footer-copy">© 2026 CrossFit Orion — SASU · SIRET 821 519 980 00022 · 4 rue Jean Nicot, 45140 Ingré · Tous droits réservés</div>
+</footer>
+</div>
+
+<script>
+// ============================
+// DATA STORE (localStorage)
+// ============================
+const DEFAULTS = {
+  contact:{phone:'06 68 99 36 39',email:'site@crossfitorion.fr',address:'4 rue Jean Nicot, 45140 Ingré, France',name:'Alexis Pellerin',role:'Fondateur & Coach Principal',intro:'Pour toute question sur les abonnements, les séances découverte ou les horaires, contactez-nous directement.'},
+  horaires:[
+    {day:'Lundi',time:'7h00 – 13h30\n16h30 – 20h30'},
+    {day:'Mardi – Vendredi',time:'10h00 – 13h30\n16h30 – 20h30'},
+    {day:'Samedi',time:'9h00 – 15h30'},
+    {day:'Dimanche',time:'9h00 – 12h00'}
+  ],
+  tarifs:[
+    {name:'Mensuel sans engagement',price:'À partir de 20€',sub:'par mois · Résiliable à tout moment',desc:'Accès aux cours selon le forfait choisi. Liberté totale, sans contrainte.',badge:'Sans engagement'},
+    {name:'Mensuel avec engagement',price:'À partir de 20€',sub:'par mois · Tarif préférentiel',desc:'Le meilleur tarif pour les pratiquants réguliers. Engagement annuel.',badge:'Tarif avantageux'},
+    {name:'Carte 20 séances',price:'À la carte',sub:'20 entrées · Sans date d\'expiration',desc:'Flexibilité maximale. Utilisez vos séances à votre rythme.',badge:'Flexible'}
+  ],
+  parrainage:'Amenez un ami et bénéficiez d\'avantages exclusifs pour vous deux. Contactez-nous pour en savoir plus.',
+  team:[
+    {initials:'AP',name:'Alexis Pellerin',role:'Fondateur & Coach Principal',bio:'Fondateur de CrossFit Orion, Alexis guide la box depuis le début avec passion et expertise.',photo:''},
+    {initials:'S',name:'Sabrina',role:'Coach certifiée',bio:'Coach certifiée, Sabrina apporte dynamisme et bonne humeur à chaque séance.',photo:''},
+    {initials:'J',name:'Julien',role:'Coach certifié',bio:'Spécialiste de la force et de l\'haltérophilie, Julien pousse chaque athlète à se dépasser.',photo:''},
+    {initials:'N',name:'Nathan',role:'Coach certifié',bio:'Coach passionné de Hyrox et d\'endurance fonctionnelle.',photo:''},
+    {initials:'Nm',name:'Noémie',role:'Coach certifiée',bio:'Experte en mobilité et préparation physique, Noémie accompagne tous les niveaux.',photo:''}
+  ],
+  avis:[
+    {text:'Une box incroyable ! L\'ambiance est au top, les coachs sont à l\'écoute et très compétents. Je recommande à 100% pour débuter ou progresser.',author:'Membre CrossFit Orion · Google'},
+    {text:'Alexis et toute l\'équipe sont fantastiques. Le niveau des cours est excellent, la programmation est variée et bien pensée.',author:'Membre CrossFit Orion · Google'},
+    {text:'Meilleure box de la région ! L\'espace est propre, bien équipé, et la communauté est vraiment soudée. On se sent accueilli dès le premier jour.',author:'Membre CrossFit Orion · Google'}
+  ],
+  medias:{video1:'https://www.youtube.com/embed?listType=user_uploads&list=UCfvwp7BUPdB71aGgwoxszzg',video2:'',instagram:'https://www.instagram.com/crossfitorion/',facebook:'https://www.facebook.com/crossfitorion',tiktok:'https://www.tiktok.com/@crossfit_orion',youtube:'https://www.youtube.com/channel/UCfvwp7BUPdB71aGgwoxszzg'},
+  mentions:{societe:'CrossFit Orion — SASU',siret:'821 519 980 00022',directeur:'Alexis Pellerin',hebergeur:'OVH SAS — 2 rue Kellermann, 59100 Roubaix, France',rgpd:'Les données collectées via le formulaire de contact (nom, email, téléphone, message) sont utilisées uniquement pour répondre à vos demandes. Elles ne sont pas transmises à des tiers sans votre consentement. Conformément au RGPD, vous disposez d\'un droit d\'accès, de rectification, de suppression et de portabilité de vos données personnelles. Pour exercer ces droits, contactez : site@crossfitorion.fr'}
+};
+
+function load(k){try{const v=localStorage.getItem('orion_'+k);return v?JSON.parse(v):DEFAULTS[k];}catch(e){return DEFAULTS[k];}}
+function save(k,v){try{localStorage.setItem('orion_'+k,JSON.stringify(v));}catch(e){}}
+
+// ============================
+// RENDER FUNCTIONS
+// ============================
+function renderHoraires(){
+  const data=load('horaires');
+  document.getElementById('horaires-display').innerHTML=data.map(h=>`<div class="horaire-card"><div class="horaire-day">${h.day}</div><div class="horaire-time">${h.time.replace(/\n/g,'<br>')}</div></div>`).join('');
+}
+
+function renderTarifs(){
+  const data=load('tarifs');
+  document.getElementById('tarifs-display').innerHTML=data.map(t=>`
+    <div class="tarif-card">
+      <div class="tarif-name">${t.name}</div>
+      <div class="tarif-price">${t.price}</div>
+      <div class="tarif-sub">${t.sub}</div>
+      <div class="tarif-desc">${t.desc}</div>
+      <div class="tarif-badge">${t.badge}</div>
+    </div>`).join('');
+  const p=load('parrainage');
+  document.getElementById('parrainage-display').innerHTML=`<svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="flex-shrink:0;"><path d="M10 1L12.5 6.5L18 7.3L14 11L15 16.5L10 14L5 16.5L6 11L2 7.3L7.5 6.5L10 1Z" stroke="#FF4D00" stroke-width="1.3" fill="rgba(255,77,0,0.1)"/></svg><div class="parrainage-text"><strong style="color:var(--text);">Parrainage</strong> — ${p}</div><button class="btn-border" style="padding:9px 18px;font-size:13px;" onclick="scrollTo('formulaire')">EN SAVOIR PLUS</button>`;
+}
+
+function renderTeam(){
+  const data=load('team');
+  document.getElementById('team-display').innerHTML=data.map(m=>`
+    <div class="team-card">
+      <div class="team-avatar">${m.photo?`<img src="${m.photo}" alt="${m.name}" onerror="this.parentNode.innerHTML='${m.initials}'">`:`${m.initials}`}</div>
+      <div class="team-name">${m.name}</div>
+      <div class="team-role">${m.role}</div>
+      <div class="team-bio">${m.bio}</div>
+      ${m.photo?'':`<div class="team-photo-note">Photo à venir</div>`}
+    </div>`).join('');
+}
+
+function renderAvis(){
+  const data=load('avis');
+  document.getElementById('avis-display').innerHTML=data.map(a=>`
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <div class="avis-text">« ${a.text} »</div>
+      <div class="avis-author">— ${a.author}</div>
+    </div>`).join('');
+}
+
+function renderVideos(){
+  const m=load('medias');
+  let html=`<div class="video-wrap"><iframe src="${m.video1}" title="CrossFit Orion" allowfullscreen loading="lazy"></iframe></div>`;
+  if(m.video2){html+=`<div class="video-wrap"><iframe src="${m.video2}" title="CrossFit Orion vidéo 2" allowfullscreen loading="lazy"></iframe></div>`;}
+  else{html+=`<div class="video-wrap" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="8" width="36" height="24" rx="6" stroke="#333" stroke-width="1.5"/><path d="M16 15L26 20L16 25V15Z" fill="#333"/></svg><p style="font-size:11px;color:#333;">Autre vidéo à venir</p></div>`;}
+  document.getElementById('video-display').innerHTML=html;
+}
+
+function renderContact(){
+  const c=load('contact');
+  document.getElementById('display-name').textContent=c.name.toUpperCase();
+  document.getElementById('display-role').textContent=c.role;
+  document.getElementById('display-intro').textContent=c.intro;
+  document.getElementById('display-email').textContent=c.email;
+  document.getElementById('display-phone').textContent=c.phone;
+  document.getElementById('display-address').innerHTML=c.address.replace(',','<br>');
+  const initials=c.name.split(' ').map(w=>w[0]).join('').substring(0,2).toUpperCase();
+  document.getElementById('display-avatar').textContent=initials;
+}
+
+function renderMentions(){
+  const m=load('mentions');
+  document.getElementById('mentions-display').innerHTML=`
+    <div class="mentions-title">Éditeur du site</div>
+    <div class="mentions-text"><strong style="color:var(--text);">${m.societe}</strong><br>${load('contact').address}<br>SIRET : ${m.siret}<br>Email : ${load('contact').email} · Tél : ${load('contact').phone}<br>Directeur de publication : ${m.directeur}</div>
+    <div class="mentions-title">Hébergement</div>
+    <div class="mentions-text">${m.hebergeur}</div>
+    <div class="mentions-title">Politique de confidentialité & RGPD</div>
+    <div class="mentions-text">${m.rgpd.replace(/\n/g,'<br>')}<br><br>Ce site utilise Google Analytics 4 et Meta Pixel à des fins statistiques et publicitaires, soumis à votre consentement via la bannière de cookies.</div>
+    <div class="mentions-title">Cookies</div>
+    <div class="mentions-text">Ce site utilise des cookies fonctionnels, analytiques (Google Analytics 4) et publicitaires (Meta Pixel). Vous pouvez accepter ou refuser les cookies via la bannière de consentement.</div>
+    <div class="mentions-title">Propriété intellectuelle</div>
+    <div class="mentions-text">L'ensemble du contenu (textes, images, logos, vidéos) est la propriété exclusive de ${m.societe}, sauf mentions contraires. Toute reproduction sans autorisation est interdite.</div>`;
+  document.getElementById('footer-copy').textContent=`© 2026 ${m.societe} · SIRET ${m.siret} · ${load('contact').address} · Tous droits réservés`;
+}
+
+function renderSocialLinks(){
+  const m=load('medias');
+  ['instagram','tiktok','facebook','youtube'].forEach(s=>{
+    const el=document.getElementById('link-'+s);
+    const fe=document.getElementById('footer-'+s);
+    if(el)el.href=m[s];
+    if(fe)fe.href=m[s];
+  });
+  const ib=document.getElementById('link-instagram-btn');
+  if(ib)ib.href=m.instagram;
+}
+
+function renderAll(){
+  renderHoraires();renderTarifs();renderTeam();renderAvis();renderVideos();renderContact();renderMentions();renderSocialLinks();
+}
+
+// ============================
+// ADMIN PANEL
+// ============================
+const ADMIN_USER='orion';const ADMIN_PASS='crossfit45';
+function openLogin(){document.getElementById('loginOverlay').classList.add('open');}
+function closeLogin(){document.getElementById('loginOverlay').classList.remove('open');document.getElementById('loginErr').style.display='none';}
+function checkLogin(){
+  const u=document.getElementById('loginUser').value;
+  const p=document.getElementById('loginPass').value;
+  if(u===ADMIN_USER&&p===ADMIN_PASS){closeLogin();openAdmin();}
+  else{document.getElementById('loginErr').style.display='block';}
+}
+function openAdmin(){document.getElementById('adminOverlay').classList.add('open');populateAdmin();}
+function closeAdmin(){document.getElementById('adminOverlay').classList.remove('open');}
+function showTab(id){
+  document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+function populateAdmin(){
+  const c=load('contact');
+  document.getElementById('a-phone').value=c.phone;
+  document.getElementById('a-email').value=c.email;
+  document.getElementById('a-address').value=c.address;
+  document.getElementById('a-name').value=c.name;
+  document.getElementById('a-role').value=c.role;
+  document.getElementById('a-intro').value=c.intro;
+
+  const h=load('horaires');
+  document.getElementById('horaires-list').innerHTML='';
+  h.forEach((item,i)=>addHoraireEntry(item,i));
+
+  const t=load('tarifs');
+  document.getElementById('tarifs-list').innerHTML='';
+  t.forEach((item,i)=>addTarifEntry(item,i));
+  document.getElementById('a-parrainage').value=load('parrainage');
+
+  const m=load('medias');
+  document.getElementById('a-video1').value=m.video1;
+  document.getElementById('a-video2').value=m.video2;
+  document.getElementById('a-instagram').value=m.instagram;
+  document.getElementById('a-facebook').value=m.facebook;
+  document.getElementById('a-tiktok').value=m.tiktok;
+  document.getElementById('a-youtube').value=m.youtube;
+
+  const team=load('team');
+  document.getElementById('team-photos-list').innerHTML='';
+  team.forEach((m2,i)=>{
+    const d=document.createElement('div');d.className='admin-entry';
+    d.innerHTML=`<div class="admin-entry-content"><span style="font-family:'Barlow Condensed',sans-serif;font-size:11px;color:#555;letter-spacing:1px;">${m2.name}</span><input class="admin-entry-input" placeholder="URL photo (https://...)" data-team="${i}" value="${m2.photo||''}"/></div>`;
+    document.getElementById('team-photos-list').appendChild(d);
+  });
+
+  const av=load('avis');
+  document.getElementById('avis-list').innerHTML='';
+  av.forEach((item,i)=>addAvisEntry(item,i));
+
+  const ml=load('mentions');
+  document.getElementById('a-societe').value=ml.societe;
+  document.getElementById('a-siret').value=ml.siret;
+  document.getElementById('a-directeur').value=ml.directeur;
+  document.getElementById('a-hebergeur').value=ml.hebergeur;
+  document.getElementById('a-rgpd').value=ml.rgpd;
+}
+
+function addHoraireEntry(item,i){
+  const d=document.createElement('div');d.className='admin-entry';d.dataset.idx=i;
+  d.innerHTML=`<div class="admin-entry-content"><input class="admin-entry-input" placeholder="Jour (ex: Lundi)" value="${item?item.day:''}" data-field="day"/><input class="admin-entry-input" placeholder="Horaires (ex: 9h00 – 20h00)" value="${item?item.time:''}" data-field="time"/></div><button class="admin-del" onclick="this.parentNode.remove()">✕</button>`;
+  document.getElementById('horaires-list').appendChild(d);
+}
+function addHoraire(){addHoraireEntry({day:'',time:''},Date.now());}
+
+function addTarifEntry(item,i){
+  const d=document.createElement('div');d.className='admin-entry';d.dataset.idx=i;
+  d.innerHTML=`<div class="admin-entry-content">
+    <input class="admin-entry-input" placeholder="Nom de la formule" value="${item?item.name:''}" data-field="name"/>
+    <input class="admin-entry-input" placeholder="Prix (ex: À partir de 20€)" value="${item?item.price:''}" data-field="price"/>
+    <input class="admin-entry-input" placeholder="Sous-titre" value="${item?item.sub:''}" data-field="sub"/>
+    <input class="admin-entry-input" placeholder="Description" value="${item?item.desc:''}" data-field="desc"/>
+    <input class="admin-entry-input" placeholder="Badge" value="${item?item.badge:''}" data-field="badge"/>
+  </div><button class="admin-del" onclick="this.parentNode.remove()">✕</button>`;
+  document.getElementById('tarifs-list').appendChild(d);
+}
+function addTarif(){addTarifEntry({name:'',price:'',sub:'',desc:'',badge:''},Date.now());}
+
+function addAvisEntry(item,i){
+  const d=document.createElement('div');d.className='admin-entry';d.dataset.idx=i;
+  d.innerHTML=`<div class="admin-entry-content"><textarea class="admin-entry-input" placeholder="Texte de l'avis (5 étoiles uniquement)" style="min-height:60px;resize:vertical;">${item?item.text:''}</textarea><input class="admin-entry-input" placeholder="Auteur (ex: Jean D. · Google)" value="${item?item.author:''}" data-field="author"/></div><button class="admin-del" onclick="this.parentNode.remove()">✕</button>`;
+  document.getElementById('avis-list').appendChild(d);
+}
+function addAvis(){addAvisEntry({text:'',author:''},Date.now());}
+
+function showSaved(id){
+  const el=document.getElementById(id);el.style.display='block';
+  setTimeout(()=>el.style.display='none',3000);
+}
+
+function saveContact(){
+  save('contact',{phone:document.getElementById('a-phone').value,email:document.getElementById('a-email').value,address:document.getElementById('a-address').value,name:document.getElementById('a-name').value,role:document.getElementById('a-role').value,intro:document.getElementById('a-intro').value});
+  renderContact();renderMentions();showSaved('saved-contact');
+}
+
+function saveHoraires(){
+  const entries=document.querySelectorAll('#horaires-list .admin-entry');
+  const data=[];
+  entries.forEach(e=>{
+    const day=e.querySelector('[data-field="day"]').value.trim();
+    const time=e.querySelector('[data-field="time"]').value.trim();
+    if(day)data.push({day,time});
+  });
+  save('horaires',data);renderHoraires();showSaved('saved-horaires');
+}
+
+function saveTarifs(){
+  const entries=document.querySelectorAll('#tarifs-list .admin-entry');
+  const data=[];
+  entries.forEach(e=>{
+    const inputs=e.querySelectorAll('[data-field]');
+    const obj={};inputs.forEach(i=>obj[i.dataset.field]=i.value);
+    const ta=e.querySelector('textarea');
+    if(ta)obj.desc=ta.value;
+    if(obj.name)data.push(obj);
+  });
+  save('tarifs',data);
+  save('parrainage',document.getElementById('a-parrainage').value);
+  renderTarifs();showSaved('saved-tarifs');
+}
+
+function saveMedias(){
+  const m={video1:document.getElementById('a-video1').value,video2:document.getElementById('a-video2').value,instagram:document.getElementById('a-instagram').value,facebook:document.getElementById('a-facebook').value,tiktok:document.getElementById('a-tiktok').value,youtube:document.getElementById('a-youtube').value};
+  save('medias',m);
+  const team=load('team');
+  document.querySelectorAll('[data-team]').forEach(inp=>{team[inp.dataset.team].photo=inp.value;});
+  save('team',team);
+  renderVideos();renderTeam();renderSocialLinks();showSaved('saved-medias');
+}
+
+function saveAvis(){
+  const entries=document.querySelectorAll('#avis-list .admin-entry');
+  const data=[];
+  entries.forEach(e=>{
+    const ta=e.querySelector('textarea');
+    const inp=e.querySelector('input');
+    if(ta&&ta.value.trim())data.push({text:ta.value.trim(),author:inp?inp.value.trim():'Google'});
+  });
+  save('avis',data);renderAvis();showSaved('saved-avis');
+}
+
+function saveMentions(){
+  save('mentions',{societe:document.getElementById('a-societe').value,siret:document.getElementById('a-siret').value,directeur:document.getElementById('a-directeur').value,hebergeur:document.getElementById('a-hebergeur').value,rgpd:document.getElementById('a-rgpd').value});
+  renderMentions();showSaved('saved-mentions');
+}
+
+// ============================
+// NAV & SCROLL
+// ============================
+function scrollTo(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  const nav=document.getElementById('topnav');
+  const top=el.getBoundingClientRect().top+window.scrollY-(nav?nav.offsetHeight:56)-10;
+  window.scrollTo({top,behavior:'smooth'});
+}
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+document.addEventListener('click',function(e){
+  const m=document.getElementById('mobileMenu');
+  const b=document.getElementById('burger');
+  if(m&&b&&!m.contains(e.target)&&!b.contains(e.target))m.classList.remove('open');
+  const d=document.getElementById('countryDropdown');
+  const fb=document.getElementById('flagBtn');
+  if(d&&fb&&!fb.contains(e.target))d.style.display='none';
+  const ao=document.getElementById('adminOverlay');
+  if(ao&&ao.classList.contains('open')&&e.target===ao)closeAdmin();
+});
+
+// ============================
+// PHONE DROPDOWN
+// ============================
+function toggleDropdown(e){e.stopPropagation();const d=document.getElementById('countryDropdown');d.style.display=d.style.display==='none'?'block':'none';}
+function selectCountry(e,flag,code,ph){
+  e.stopPropagation();
+  document.getElementById('selFlag').textContent=flag;
+  document.getElementById('selCode').textContent=code;
+  document.getElementById('fphone').placeholder=ph;
+  document.getElementById('countryDropdown').style.display='none';
+}
+
+// ============================
+// WORD ANIMATION (aléatoire au clic)
+// ============================
+const WORDS=['Les WODs de CrossFit','L\'Hyrox','Le Free Access','CrossFit Kids','De la compétition'];
+let wordTimer=null;let wordCur=0;let wordRunning=false;
+function shuffle(arr){return arr.slice().sort(()=>Math.random()-.5);}
+let shuffledWords=shuffle(WORDS);
+
+function startTester(){
+  if(wordRunning){scrollTo('formulaire');return;}
+  wordRunning=true;
+  const btn=document.getElementById('testerBtn');
+  const label=document.getElementById('testerLabel');
+  const slot=document.getElementById('wordSlot');
+  btn.classList.add('running');
+  label.style.display='none';
+  slot.style.display='inline-flex';
+  shuffledWords=shuffle(WORDS);
+  wordCur=0;
+  const wItems=[0,1,2,3,4].map(i=>document.getElementById('w'+i));
+  wItems.forEach((el,i)=>{el.textContent=shuffledWords[i]||WORDS[i];el.classList.remove('active','exit');});
+  wItems[0].classList.add('active');
+  wordTimer=setInterval(function(){
+    const prev=wordCur;
+    wordCur=(wordCur+1)%shuffledWords.length;
+    wItems[prev].classList.remove('active');wItems[prev].classList.add('exit');
+    setTimeout(()=>{if(wItems[prev])wItems[prev].classList.remove('exit');},450);
+    wItems[wordCur].classList.add('active');
+    if(wordCur===shuffledWords.length-1){
+      setTimeout(()=>{clearInterval(wordTimer);wordRunning=false;btn.classList.remove('running');label.style.display='';slot.style.display='none';shuffledWords=shuffle(WORDS);scrollTo('formulaire');},2200);
+    }
+  },2000);
+}
+
+// ============================
+// COOKIES
+// ============================
+function acceptCookies(){document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieConsent','accepted');}
+function refuseCookies(){document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieConsent','refused');}
+
+// ============================
+// EMAILJS
+// ============================
+const EMAILJS_PUBLIC_KEY='VOTRE_CLE_PUBLIQUE';
+const EMAILJS_SERVICE_ID='VOTRE_SERVICE_ID';
+const EMAILJS_TEMPLATE_ID='VOTRE_TEMPLATE_ID';
+window.addEventListener('load',function(){
+  if(typeof emailjs!=='undefined')emailjs.init(EMAILJS_PUBLIC_KEY);
+  if(localStorage.getItem('cookieConsent'))document.getElementById('cookieBanner').style.display='none';
+  renderAll();
+});
+
+function sendEmail(e){
+  e.preventDefault();
+  const btn=document.getElementById('submitBtn');
+  const success=document.getElementById('formSuccess');
+  const error=document.getElementById('formError');
+  const form=document.getElementById('contactForm');
+  const name=document.getElementById('fname').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const message=document.getElementById('fmessage').value.trim();
+  if(!name||!email||!message){error.style.display='block';error.textContent='Veuillez remplir tous les champs obligatoires.';setTimeout(()=>error.style.display='none',4000);return;}
+  btn.disabled=true;btn.textContent='ENVOI EN COURS...';
+  success.style.display='none';error.style.display='none';
+  const params={from_name:name,from_email:email,phone:document.getElementById('selCode').textContent+' '+document.getElementById('fphone').value,message:message,to_email:load('contact').email};
+  if(EMAILJS_PUBLIC_KEY==='VOTRE_CLE_PUBLIQUE'){
+    setTimeout(()=>{btn.disabled=false;btn.textContent='ENVOYER MON MESSAGE';success.style.display='block';form.reset();document.getElementById('selFlag').textContent='🇫🇷';document.getElementById('selCode').textContent='+33';setTimeout(()=>success.style.display='none',6000);},1200);
+    return;
+  }
+  emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,params)
+    .then(()=>{btn.disabled=false;btn.textContent='ENVOYER MON MESSAGE';success.style.display='block';form.reset();setTimeout(()=>success.style.display='none',6000);})
+    .catch(()=>{btn.disabled=false;btn.textContent='ENVOYER MON MESSAGE';error.style.display='block';setTimeout(()=>error.style.display='none',5000);});
+}
+</script>
+</body>
+</html>
